@@ -1,0 +1,26 @@
+.btn {
+    width:100%;
+    background: linear-gradient(to bottom right, #ffccff 29%, #ff66ff 99%);
+    aspect-ratio: 1/1;
+    font-size: 2rem;
+    text-transform: uppercase;
+    /* padding: .5rem; */
+    font-weight: bold;
+    cursor: pointer;
+    color: black;
+}
+
+.btn.active {
+    background: hsl(200, 100%, 50%);
+    /* color: white; */
+}
+
+.btn.inactive {
+    background:  #e6e6e6;
+    opacity: .3;
+}
+
+.btn:hover:not(:disabled),
+.btn:focus:not(:disabled) {
+    background: linear-gradient(to bottom right, #ffccff 29%, #ccccff 99%);
+}
